@@ -1,0 +1,42 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+}
+#parent {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-grow: initial;
+    align-content: stretch;
+    flex-wrap: wrap;
+    /* grid-template-columns: auto auto auto;
+    padding: 10px; */
+}
+#parent>div {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 25%;
+    box-sizing: content-box;
+    /* width: 100%; */
+    /* padding: 20px;
+    font-size: 30px;
+    text-align: center; */
+}
+
+ @media screen and (max-width:800px){ 
+     #parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: initial;
+        align-content: stretch;
+        flex-flow: column nowrap;
+        width: 100%;
+        /* display: grid;
+        grid-template-columns: auto;
+        padding: 10px; */
+    }
+ } 
