@@ -18,8 +18,12 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.8);
     flex-shrink: 1;
     flex-basis: auto;
+    justify-content: center;
     width: 25%;
     box-sizing: content-box;
+    align-items: center;
+    align-content: center;
+    display: grid;
     /* width: 100%; */
     /* padding: 20px;
     font-size: 30px;
